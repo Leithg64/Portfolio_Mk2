@@ -1,0 +1,64 @@
+body {
+  background-image: url("./assets/beach.png");
+  background-size: fit;
+  background-repeat: no-repeat;
+}
+
+.card {
+  border: 3px solid rgb(21, 0, 207);
+  background-color: #e2ca76;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.151);
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  max-width: 400px;
+  display: inline-block;
+  margin-top: 100px;
+}
+
+.project-card {
+  border: 3px solid rgb(21, 0, 207);
+  background-color: #e2ca76;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.151);
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  max-width: 400px;
+  display: inline-block;
+}
+
+.button{
+  background-color: rgb(32, 151, 255);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.card .card-image {
+  max-width: 50%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+
+.card .card-title {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.card .card-text{
+  font-family: Arial, sans-serif;
+}
+
+.footer-text {
+  text-align: center;
+}
+
+.nav-item {
+  display: inline-block;
+  padding-left: 10px;
+}
