@@ -13,7 +13,7 @@ body {
   padding: 20px;
   margin: 10px;
   text-align: center;
-  max-width: 400px;
+  max-width: 500px;
   display: inline-block;
   margin-top: 100px;
 }
@@ -26,8 +26,49 @@ body {
   padding: 20px;
   margin: 10px;
   text-align: center;
-  max-width: 400px;
+  max-width: 500px;
   display: inline-block;
+}
+
+.project-links {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.project-link {
+  padding: 8px 16px;
+  background-color: #f0f0f0;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.project-link.active {
+  background-color: #007BFF;
+  color: white;
+}
+
+.project-link:hover {
+  background-color: #ddd;
+}
+
+.project-display img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.project-extra-links a {
+  margin-right: 16px;
+  text-decoration: none;
+  color: #007BFF;
+  transition: color 0.3s;
+}
+
+.project-extra-links a:hover {
+  color: #0056b3;
 }
 
 .button{
@@ -43,7 +84,9 @@ body {
   max-width: 50%;
   height: auto;
   margin-bottom: 10px;
-  border-radius: 50%;
+  border-radius: 15%;
+  border: 3px solid rgb(21, 0, 207);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.151);
 }
 
 .card .card-title {
