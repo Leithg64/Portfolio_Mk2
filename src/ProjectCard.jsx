@@ -1,11 +1,12 @@
 import React, { useState } from "react";
+import Card from 'react-bootstrap/Card';
 
 const ProjectCard = ({ projects }) => {
   // Initialize state to track the current project being displayed
   const [currentProject, setCurrentProject] = useState(projects[0]);
 
   return (
-    <div className="project-card">
+    <Card>
       {/* Navigation Links */}
       <div className="project-links">
         {projects.map((project) => (
@@ -31,7 +32,8 @@ const ProjectCard = ({ projects }) => {
           <a href={currentProject.links.moreInfo} target="_blank" rel="noopener noreferrer">Documentation</a>
         </div>
       </div>
-    </div>
+    </Card>
+    
   );
 };
 
