@@ -7,7 +7,11 @@ const ProjectCard = ({ projects }) => {
 
   return (
     <Card>
-      {/* Navigation Links */}
+        <Card.Header>
+        </Card.Header>
+        <Card.Body>
+          <Card.Text>
+               {/* Navigation Links */}
       <div className="project-links">
         {projects.map((project) => (
           <button
@@ -32,7 +36,10 @@ const ProjectCard = ({ projects }) => {
           <a href={currentProject.links.moreInfo} target="_blank" rel="noopener noreferrer">Documentation</a>
         </div>
       </div>
-    </Card>
+          </Card.Text>
+        </Card.Body>
+      </Card>
+    
     
   );
 };

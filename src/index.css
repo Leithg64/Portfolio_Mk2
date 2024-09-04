@@ -11,27 +11,21 @@ body {
   border-radius: 10px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.151);
   padding: 20px;
-  max-width: 500px;
-  display: inline-block;
+  width: 600px;
+  height: 600px;
+  display: flex;
+  align-items: center;
   text-align: center;
-  text-overflow: ellipsis;
   margin: 30px 15px;
   font-size: 18px;
 }
 
-.project-card {
-  border: 3px solid rgb(21, 0, 207);
-  background-color: #e2ca76;
-  border-radius: 10px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.151);
-  padding: 20px;
-  max-width: 500px;
-  display: inline-block;
-  text-align: center;
-  text-overflow: ellipsis;
-  margin: 30px 15px;
-  font-size: 18px;
+.card-container {
+  display: flex;
+  justify-content: center;  
+  align-items: center;     
 }
+
 
 .project-links {
   display: flex;
@@ -72,6 +66,13 @@ body {
 
 .project-extra-links a:hover {
   color: #0056b3;
+}
+
+.contact-info {
+  border: 2px solid blue;
+  color: #ddd;
+  background-color: #007BFF;
+  padding: 10px;
 }
 
 .button{

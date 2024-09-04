@@ -13,7 +13,7 @@ function About() {
             <Card.Title><h2>About</h2></Card.Title>
             <Card.Text>
               <p>
-                Hi, Im Leith! Im a Full-Stack Web Developer, born in Australia and now based in London, Im building websites with 
+                <i>Hi, Im Leith!</i> Im a <b>Front End Web Developer</b>, born in Australia and now based in London, Im building websites with 
                 a focus on smart, interesting and responsive UX and UI design that are accessible to all.
               </p>
             </Card.Text>

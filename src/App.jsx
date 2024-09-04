@@ -16,24 +16,24 @@ function App() {
   const projects = [
     {
       id: 1,
-      title: "Project One",
+      title: "SeaFlix App",
       imageUrl: samImage,
       description: "This is the description for Project One.",
       links: {
-        liveDemo: "https://example.com/project1",
-        repo: "https://github.com/username/project1",
-        moreInfo: "https://example.com/project1/info"
+        liveDemo: "https://seaflix.netlify.app/",
+        repo: "https://github.com/Leithg64/MyFlix_Client-side",
+        moreInfo: "#"
       }
     },
     {
       id: 2,
-      title: "Project Two",
+      title: "2D Platformer Game",
       imageUrl: dilbertImage,
       description: "This is the description for Project Two.",
       links: {
-        liveDemo: "https://example.com/project2",
-        repo: "https://github.com/username/project2",
-        moreInfo: "https://example.com/project2/info"
+        liveDemo: "https://leithg64.github.io/2D-Platformer-Game/",
+        repo: "https://github.com/Leithg64/2D-Platformer-Game",
+        moreInfo: "#"
       }
     },
     {
@@ -85,14 +85,14 @@ function App() {
   
   
   return(
-    <>
-    <Header/>
-    <About/>
-    <ProjectCard projects={projects}/>
-    <Contact/>
-    <Freelance/>
-    <Footer/>
-    </>
+    <div className="card-container">
+      <Header/>
+      <About/>
+      <ProjectCard projects={projects}/>
+      <Contact/>
+      <Freelance/>
+      <Footer/>
+    </div>
   );
 }
 
