@@ -9,7 +9,7 @@ body {
 .card {
   border: 3px solid rgb(21, 0, 207);
   background-color: #e2ca76;
-  border-radius: 10px;
+  border-radius: 5px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.151);
   padding: 20px;
   width: 600px;
@@ -64,7 +64,7 @@ Footer {
 .project-display img {
   width: 90%;
   height: auto;
-  border-radius: 15px;
+  border-radius: 5px;
 }
 
 .project-extra-links a {
@@ -80,6 +80,7 @@ Footer {
 
 .contact-info {
   border: 2px solid blue;
+  border-radius: 5px;
   color: #ddd;
   background-color: #007BFF;
   padding: 10px;
@@ -94,11 +95,16 @@ Footer {
   cursor: pointer;
 }
 
+button:hover {
+  transition: background-color 0.3s;
+  background-color: #0056b3;
+}
+
 .card .card-image {
   max-width: 50%;
   height: auto;
   margin-bottom: 10px;
-  border-radius: 15%;
+  border-radius: 5%;
   border: 3px solid rgb(21, 0, 207);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.151);
 }
@@ -167,7 +173,4 @@ Footer {
   background-color: #0056b3;
 }
 
-button:hover {
-  transition: background-color 0.3s;
-  background-color: #0056b3;
-}
+
