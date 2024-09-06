@@ -17,7 +17,7 @@ function About() {
                 a focus on smart, interesting and responsive UX and UI design that are accessible to all.
               </p>
             </Card.Text>
-            <Button/>
+              <Button></Button>
           </Card.Body>
         </Card>
     );

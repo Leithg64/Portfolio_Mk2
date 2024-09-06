@@ -11,31 +11,31 @@ const ProjectCard = ({ projects }) => {
         </Card.Header>
         <Card.Body>
           <Card.Text>
-               {/* Navigation Links */}
-      <div className="project-links">
-        {projects.map((project) => (
-          <button
-            key={project.id}
-            onClick={() => setCurrentProject(project)}
-            className={`project-link ${currentProject.id === project.id ? 'active' : ''}`}
-          >
-            {project.title}
-          </button>
-        ))}
-      </div>
+          {/* Navigation Links */}
+          <div className="project-links">
+            {projects.map((project) => (
+              <button
+                key={project.id}
+                onClick={() => setCurrentProject(project)}
+                className={`project-link ${currentProject.id === project.id ? 'active' : ''}`}
+              >
+                {project.title}
+              </button>
+            ))}
+          </div>
 
-      {/* Project Display */}
-      <div className="project-display">
-        <img src={currentProject.imageUrl} alt={currentProject.title} style={{ width: '200px', height: 'auto' }} />
-        <h1>{currentProject.title}</h1>
-        <p>{currentProject.description}</p>
-        
-        <div className="project-extra-links">
-          <a href={currentProject.links.liveDemo} target="_blank" rel="noopener noreferrer">Live Site</a>
-          <a href={currentProject.links.repo} target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href={currentProject.links.moreInfo} target="_blank" rel="noopener noreferrer">Documentation</a>
-        </div>
-      </div>
+          {/* Project Display */}
+          <div className="project-display">
+            <img src={currentProject.imageUrl} alt={currentProject.title} style={{ width: '200px', height: 'auto' }} />
+            <h1>{currentProject.title}</h1>
+            <p>{currentProject.description}</p>
+            
+            <div className="project-extra-links">
+              <a href={currentProject.links.liveDemo} target="_blank" rel="noopener noreferrer">Live Site</a>
+              <a href={currentProject.links.repo} target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href={currentProject.links.moreInfo} target="_blank" rel="noopener noreferrer">Documentation</a>
+            </div>
+          </div>
           </Card.Text>
         </Card.Body>
       </Card>
@@ -45,3 +45,4 @@ const ProjectCard = ({ projects }) => {
 };
 
 export default ProjectCard;
+

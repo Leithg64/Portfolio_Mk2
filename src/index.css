@@ -1,4 +1,5 @@
 body {
+  font-family: Arial, sans-serif;
   background-image: url("./assets/beach.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -12,7 +13,7 @@ body {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.151);
   padding: 20px;
   width: 600px;
-  height: 600px;
+  height: 550px;
   display: flex;
   align-items: center;
   text-align: center;
@@ -26,6 +27,13 @@ body {
   align-items: center;     
 }
 
+Footer {
+  position:absolute;
+  left:0;
+  bottom:0;
+  right:0;
+}
+
 
 .project-links {
   display: flex;
@@ -37,6 +45,9 @@ body {
   padding: 8px 16px;
   background-color: #f0f0f0;
   border: none;
+  border-radius: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
@@ -51,10 +62,9 @@ body {
 }
 
 .project-display img {
-  width: 100%;
+  width: 90%;
   height: auto;
-  border-radius: 8px;
-  margin-bottom: 16px;
+  border-radius: 15px;
 }
 
 .project-extra-links a {
@@ -93,15 +103,6 @@ body {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.151);
 }
 
-.card .card-title {
-  font-family: Arial, sans-serif;
-  margin: 0;
-}
-
-.card .card-text{
-  font-family: Arial, sans-serif;
-}
-
 .footer-text {
   text-align: center;
 }
@@ -109,4 +110,64 @@ body {
 .nav-item {
   display: inline-block;
   padding-left: 10px;
+}
+
+/* ContactForm Container Styling */
+.contact-form {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 30px 15px;
+  font-size: 18px;
+  width: 100%;
+}
+
+/* Form input field styling */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-family: Arial, sans-serif;
+  border: 2px solid rgb(21, 0, 207);
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: white;
+  color: #333;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: rgb(32, 151, 255); /* Highlight on focus */
+}
+
+/* Textarea specific styling */
+.contact-form textarea {
+  resize: vertical;
+  height: 120px;
+  background-color: white;
+}
+
+/* Submit button styling */
+.contact-form button {
+  background-color: rgb(32, 151, 255);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+button:hover {
+  transition: background-color 0.3s;
+  background-color: #0056b3;
 }
